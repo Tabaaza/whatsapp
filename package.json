@@ -1,0 +1,16 @@
+{
+  "name": "waqr",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "storybook": "start-storybook -p 9001",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Omar Tabaza",
+  "license": "ISC",
+  "devDependencies": {
+    "@kadira/storybook": "^1.5.0"
+  },
+  "description": ""
+}
