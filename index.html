@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp / Telegram Direct message URL/QR</title>
+  <link rel="stylesheet" href="resources/css/index.css">
+</head>
+<body>
+  <div id="mainDiv">
+  <form id="myForm">
+    <label for="phoneNumberlebel" >Phone Number:</label>
+    <input type="number" id="phoneNumber" name="phoneNumber"><br><br>
+    <label for="initialTextLebel">Initial message text:</label>
+    <input type="text" id="initialText" name="initialText"><br><br>
+    <input type="submit" id="submit" value="Generate">
+    <label id="textafterAPI" for="textafterAPI"></label>
+    <br>
+  </form>
+  <div id="imageQRc"> 
+    <img id="qrcode" src="https://api.qrserver.com/v1/create-qr-code/?size=250x50&data=Made by Omar"/>
+  </div>
+</div>
+<script src="resources/js/scripts.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,96 @@
+:root {
+    --bgColor: white;
+    --inputColor: black;
+    --outlineColor: rgb(132, 233, 193);
+    --spacer: 1rem;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    height: 100%;
+    overflow: auto;
+  }
+  
+  body {
+    display: grid;
+    place-items: center start;
+    background: var(--bgColor);
+  }
+  [id="mainDiv"]{
+    position: relative;
+    left: 1rem;
+    top: 1rem;
+  }
+  img{
+    box-sizing: border-box;
+    padding: 15px;
+    outline: 10px solid var(--outlineColor);
+    
+  }
+  [id='imageQRc']{
+    position: relative;
+    right: -2rem;
+    top: 1rem;
+    
+  }
+  
+  form {
+    transform: translate3d(0,0,0);
+    padding: var(--spacer);
+  }
+  form > * + * {
+      margin-top: var(--spacer);
+    }
+  label{
+    text-decoration: underline;
+    text-decoration-color: var(--outlineColor);
+    line-height: 1.6;
+  }
+  
+  label,
+  input {
+    font-size: 1.5rem;
+    font-family: monospace;
+    color: var(--inputColor);
+  }
+  
+    input {
+      outline: 2px solid var(--outlineColor);
+      outline-offset: 1.5px;
+    }
+  
+  [id="submit"] {
+    cursor: pointer;
+    margin: calc(var(--spacer) * 2) 0 0 2px;
+    padding: 0.75rem 1.25rem;
+    color: var(--bgColor);
+    background-color: var(--inputColor);
+    box-shadow: 4px 4px 0 rgba(rgb(114, 223, 199), 0.2);
+  }
+    [id="submit"]:active {
+      transform: translateY(1px);
+    }
+
+  
+  .input-wrapper {
+    position: relative;
+  }
+  
+  input {
+    padding: 0.75rem 4rem 0.75rem 0.75rem;
+    width: 100%;
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: 
+       0 0 0 2px black inset,
+       6px 6px 0 rgba(dodgerblue, 0.9) inset, 
+       3px 3px 0 rgba(dodgerblue, 0.9) inset;
+    -webkit-appearance: none;
+  }
+
+
+  /* Mine ^
+  
